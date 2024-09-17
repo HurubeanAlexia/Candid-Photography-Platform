@@ -1,0 +1,426 @@
+/* homepage.css */
+
+body {
+    background-color: rgb(203, 201, 201); /* Schimbă aici culoarea de fundal dorită */
+}
+
+
+.container {
+    position: relative;
+    display: inline-block;
+}
+
+#homepagePhoto {
+    width: 104.9%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+    border-top: 0px;
+}
+
+#overlayImage {
+    
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    z-index: 1;
+    width: 100%;
+    height: 78px;
+}
+
+#logoImage {
+    width: 120px;
+    height: 60px;
+    position: absolute;
+    top: 9px; /* Ajustează poziția verticală a logo-ului */
+    left: 20px; /* Ajustează poziția orizontală a logo-ului */
+    z-index: 2; /* Asigură că logo-ul este deasupra imaginii de fundal */
+}
+
+#menuButton {
+    width: 50px; /* Dimensiunile butonului pentru meniu */
+    height: 50px;
+    position: absolute;
+    top: 10px; /* Ajustează poziția verticală a butonului */
+    left: 22px; /* Ajustează poziția orizontală a butonului */
+    z-index: 3; /* Asigură că butonul este deasupra tuturor celorlalte elemente */
+    cursor: pointer; /* Arată că butonul este interactiv */
+}
+
+#loginButton {
+    position: absolute;
+    top: 10px;
+    right: 15px; /* Ajustează poziția orizontală a butonului de login */
+    z-index: 3;
+    cursor: pointer;
+    border: none;
+    background: D9D9D9;
+    border-radius: 20px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    transform: 0.8s;
+}
+
+
+
+
+.text {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white; /* Example styling */
+    font-size: 42px; /* Example styling */
+    font-family: cursive;
+    font-weight: 100;
+}
+
+.line {
+    border: 1px solid #333; /* sau orice altă culoare dorită */
+    width: 90%;
+    margin-right: 80px;
+    margin-inline-start: 86px;
+    margin-top: 60px;
+  }
+
+  .text2 {
+    text-align: center;
+    position:fixed;
+    margin-left: 20px;
+    margin-top: 300px;
+    color: rgb(0, 0, 0); /* Example styling */
+    font-size: 32px; /* Example styling */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+}
+
+#groupPhoto{
+    margin-left: 30px;
+    margin-top: 100px;
+}
+
+
+.imageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.imageContainer img {
+    margin-right: 26px; /* sau altă valoare pentru a separa imaginea de text */
+}
+
+.textContent{
+    align-self: center;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+
+}
+
+
+.buttonContainer {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s ease;
+    top: -90px;
+    right: -960px;
+    cursor: pointer; /* Face cursorul să devină un pointer la hover */
+
+  }
+  
+  .buttonContainer:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+  }
+  
+  .buttonContainer span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  
+  .buttonContainer svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+  }
+  
+  .buttonContainer:hover:before {
+    width: 100%;
+    background: rgba(255, 171, 157, 1);
+  }
+  
+  .buttonContainer:hover svg {
+    transform: translateX(0);
+  }
+  
+  .buttonContainer:active {
+    transform: scale(.96);
+  }
+
+.line2 {
+    border: 1px solid #333; /* sau orice altă culoare dorită */
+    width: 90%;
+    margin-right: 80px;
+    margin-inline-start: 86px;
+    margin-top: 100px;
+  }
+
+  .imageContainer2 {
+    display: flex;
+    align-items: center;
+}
+
+.imageContainer2 img {
+    margin-right: 26px; 
+    margin-top: 100px;
+}
+
+.textContent2 {
+    margin-left: 20px;
+    align-self: center;
+    font-size: 40px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+
+}
+
+
+
+#signup{
+    cursor: pointer;
+    border: none;
+    background: D9D9D9;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 170px;
+    height: 60px;
+}
+
+.buttonContainer2 {
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s ease;
+    top: -90px;
+    right: -260px;
+    cursor: pointer; /* Face cursorul să devină un pointer la hover */
+
+  }
+  
+  .buttonContainer2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 171, 157, 0.5);
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+  }
+  
+  .buttonContainer2 span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
+  
+  .buttonContainer2 svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+  }
+  
+  .buttonContainer2:hover:before {
+    width: 100%;
+    background: rgba(255, 171, 157, 1);
+  }
+  
+  .buttonContainer2:hover svg {
+    transform: translateX(0);
+  }
+  
+  .buttonContainer2:active {
+    transform: scale(.96);
+  }
+
+
+
+  
+
+  .loginButton {
+    padding: 13px 22px;
+
+    margin: auto;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    z-index: 2;
+    cursor: pointer;
+    border: none;
+    border-radius: 28px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: all .2s ease;
+}
+
+.loginButton:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 28px;
+  background: rgb(255, 255, 255);
+  width: 56px;
+  height: 56px;
+  transition: all .3s ease;
+}
+
+.loginButton span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.loginButton svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+}
+
+.loginButton:hover:before {
+    width: 87%;
+    background: rgba(255, 171, 157, 1);
+}
+
+.loginButton:hover svg {
+    transform: translateX(0);
+}
+
+.loginButton:active {
+    transform: scale(.96);
+}
+
+  
+.video-box {
+    position: relative;
+    width: 100%; /* Asigură că video-ul ocupă întreaga lățime a ecranului */
+}
+
+.back-video {
+    width: 100%;
+    height: auto; 
+    position: relative;
+    z-index: -1; 
+}
+
+
+
+.content h1{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  margin-top: -30px;
+  font-size: 90px;
+  font-style: italic;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2; 
+  text-align: center; 
+  color: white; 
+}
+
+.line3 {
+  border: 1px solid #333; /* sau orice altă culoare dorită */
+  width: 100%;
+  margin-right: 0px;
+  margin-inline-start: 0px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.text3 {
+  margin-left: 42.8%;
+  color: rgb(0, 0, 0); /* Example styling */
+  font-size: 42px; /* Example styling */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+
+.icons {
+  font-size: 29px; /* Mărește dimensiunea iconițelor */
+  margin-top: 60px; /* Adaugă un spațiu între iconițe */
+}
+
+.icons i {
+  margin-right: 19px; /* Adaugă un spațiu între fiecare iconiță */
+}
+
+
+.icons-container {
+  display: flex; /* Utilizează flexbox */
+  justify-content: center; /* Aliniază iconițele pe orizontală în mijloc */
+  align-items: center; /* Aliniază iconițele pe verticală în mijloc */
+  height: 100px; /* Înălțimea containerului, poate fi ajustată după nevoie */
+}
+

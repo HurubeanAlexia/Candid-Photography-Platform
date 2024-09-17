@@ -1,0 +1,425 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: #5e5e5e11;
+}
+
+.descriptionPhoto img{
+    margin-left: -190px; /* Mărim spațiul din stânga pentru a împinge containerul la stânga */
+    top: -60px;
+    margin-right: 60px;
+    max-width: 700px;
+    height: 500px;
+    float: left;
+    border: 3px solid #fff;
+}
+
+.descriptionPhoto{
+    margin: 150px auto;
+    width: 70%;
+}
+
+.textContent{
+    color: #000000;
+}
+
+.textContent h1{
+    margin-bottom: 98px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #8e8c8c;
+}
+
+.textContent p{
+    font-size: 20px;
+    font-weight: 100;
+    color: #000000;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+
+/*Navbar*/
+
+#logo{
+    width: 110px;
+    height: 60px;
+}
+
+.header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:#5e5e5e11;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+
+.navbar a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+    font-size: 23px;
+    color: #000000;
+    font-weight: 100;
+    text-decoration: none;
+    margin-left: 78px; /* Adaugăm un spațiu între butoane */
+    margin-right: -20px;
+}
+
+
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: .3s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+
+/*ocupatii*/
+
+.ocupation{
+    text-align: center;
+    padding-top: 90px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ocupation h1,
+.ocupation p {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.ocupation h1{
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+
+.ocupation p{
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+/*portofolii*/
+
+
+
+
+
+
+
+
+
+
+.container2{
+    margin-bottom: 99px;
+    border-color: #000000;
+
+}
+
+.container2 img {
+    text-align: right;
+    width: 370px; /* sau orice valoare preferată pentru lățimea imaginii */
+    height: auto; /* pentru a menține proporțiile imaginii */
+    margin: 0 89px 20px; /* spațiere între imagine și text */
+}
+
+.container2 .text2 p {
+    margin: 0 89px 20px;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: left;
+    margin-left: 89px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container2 button {
+    width: 190px;
+    border: 1px solid #000000;
+    border-color: #c4c1c1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 89px;
+    margin-top: 20px;
+    padding: 10px 20px; /* sau orice dimensiune preferată pentru buton */
+    background-color: transparent; /* culoarea de fundal a butonului */
+    color: #000000; /* culoarea textului butonului */
+    border-radius: 5px; /* colțuri rotunjite pentru buton */
+    cursor: pointer; /* cursor de mână la interacțiunea cu butonul */
+}
+
+
+
+
+
+
+.container img,
+.container2 img {
+    max-width: 100%; /* asigurându-vă că imaginile nu depășesc lățimea containerului */
+    height: auto;
+}
+
+.text p,
+.text2 p {
+    margin: 0;
+}
+
+.text button,
+.text2 button {
+    margin-top: 10px; /* spațiu între text și buton */
+}
+
+
+button:hover{
+    box-shadow: 0px 0px 10px rgba(212, 209, 209, 0.5), 0px 0px 10px rgb(189, 187, 188);
+    background-color: rgba(233, 233, 233, 0.877);
+}
+
+.container0{
+    flex-wrap: wrap;}
+
+
+
+.all-portofolios{
+    display: flex;
+    flex-wrap: wrap; /* Acesta permite ca elementele să se miște pe o nouă linie când spațiul nu este suficient */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Stilizare modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Stilizare carusel */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel img {
+    scroll-snap-align: start;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Săgeți de navigare pentru carusel */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  
+
+
+  /* MODAL */
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel img {
+    scroll-snap-align: start;
+    width: 100%;
+    height: 100%;
+} 
+
+/* .carousel {
+    display: flex;
+    overflow: hidden;
+} */
+
+
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+
+
+
+
+  /* footer */
+
+  .line3 {
+    border: 1px solid #333; /* sau orice altă culoare dorită */
+    width: 100%;
+    margin-right: 0px;
+    margin-inline-start: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  
+  .text3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0); /* Example styling */
+    font-size: 42px; /* Example styling */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+  }
+  
+  .icons {
+    font-size: 39px; /* Mărește dimensiunea iconițelor */
+    margin-top: 60px; /* Adaugă un spațiu între iconițe */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .icons i {
+    margin-right: 19px; /* Adaugă un spațiu între fiecare iconiță */
+  }
+  
+  
+  .icons-container {
+    display: flex; /* Utilizează flexbox */
+    justify-content: center; /* Aliniază iconițele pe orizontală în mijloc */
+    align-items: center; /* Aliniază iconițele pe verticală în mijloc */
+    height: 100px; /* Înălțimea containerului, poate fi ajustată după nevoie */
+  }
+
+  .text4{
+    margin-bottom: 28px;
+    font-size: 22px;
+    font-weight: 100;
+    color: #8e8c8c;
+    margin-left: 40px;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+    margin-left: 39px;
+    display: flex;
+    align-items: center; /* Aliniază elementele pe același nivel vertical */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contact-info i {
+    font-size: 25px;
+    margin-right: 10px; /* Distanța între iconiță și text */
+}
